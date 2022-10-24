@@ -1,0 +1,28 @@
+#include <iostream>
+
+using namespace std;
+
+int multiply (int num1, int num2);
+
+void main ()
+ {
+   int multiplier,
+       multiplicand,
+       product;
+
+   cout << "Enter two integers: ";
+ 	
+   cin >> multiplier >> multiplicand;
+
+   product = multiply(multiplier, multiplicand);
+
+   cout << "Product of " << multiplier << " & "
+        << multiplicand << " is " << product << endl;
+
+ }
+
+int multiply (int num1, int num2)
+ {
+   return num1 * num2;
+ }
+
